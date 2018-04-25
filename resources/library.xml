@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE xml >
+<library xmlns="http://www.example.org/library-schema"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:schemaLocation="http://www.example.org/library-schema library-schema.xsd">
+	<printed-edition>
+		<book>
+			<title />
+			<number-of-copies>10</number-of-copies>
+			<read>
+				<home>
+					<day-number>
+						<many>5</many>
+						<little>3</little>
+					</day-number>
+				</home>
+				<room />
+			</read>
+		</book>
+
+		<magazine>
+			<title />
+			<number-of-copies>50</number-of-copies>
+			<read>
+				<home>
+					<day-number>
+						<many>5</many>
+						<little>3</little>
+					</day-number>
+				</home>
+				<room />
+			</read>
+		</magazine>
+		
+		<newspaper>
+			<title />
+			<number-of-copies>30</number-of-copies>
+			<read>
+				<home>
+					<day-number>
+						<many>5</many>
+						<little>3</little>
+					</day-number>
+				</home>
+				<room />
+			</read>
+		</newspaper>
+
+	</printed-edition>
+</library>
+

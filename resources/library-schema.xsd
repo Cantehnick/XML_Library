@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+	targetNamespace="http://www.example.org/library-schema" xmlns:itacby="http://www.example.org/library-schema"
+	elementFormDefault="qualified">
+
+	<xs:complexType name="library">
+		<xs:sequence maxOccurs="unbounded">
+			<xs:element name="printed-edition" type="itacby:printed-edition_type" />
+		</xs:sequence>
+	</xs:complexType>
+
+	<xs:complexType name="printed-edition-info_">
+		<xs:sequence>
+			<xs:element name="title" />
+			<xs:element name="number-of-copies" type="xs:int" />
+			<xs:element name="read" type="itacby:read_type" />
+		</xs:sequence>
+	</xs:complexType>
+
+	<xs:complexType name="read_type">
+		<xs:choice>
+			<xs:element name="home" type="itacby:home_type" />
+			<xs:element name="room" />
+		</xs:choice>
+	</xs:complexType>
+
+	<xs:complexType name="home_type">
+		<xs:sequence>
+			<xs:element name="day-number" type="itacby:day-number_tupe" />
+		</xs:sequence>
+
+	</xs:complexType>
+
+	<xs:complexType name="day-number_tupe">
+		<xs:choice>
+			<xs:element name="many" type="xs:int" />
+			<xs:element name="little" type="xs:int" />
+		</xs:choice>
+	</xs:complexType>
+
+
+
+	<xs:complexType name="printed-edition_type">
+		<xs:sequence>
+			<xs:element name="book" type="itacby:book_type" minOccurs="0"
+				maxOccurs="unbounded" />
+			<xs:element name="magazine" type="itacby:magazine_type"
+				minOccurs="0" maxOccurs="unbounded" />
+			<xs:element name="newspaper" type="itacby:newspaper_type"
+				minOccurs="0" maxOccurs="unbounded" />
+		</xs:sequence>
+	</xs:complexType>
+
+	<xs:complexType name="book_type">
+
+	</xs:complexType>
+
+
+	<xs:complexType name="magazine_type">
+
+	</xs:complexType>
+
+	<xs:complexType name="newspaper_type">
+
+	</xs:complexType>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</xs:schema>
